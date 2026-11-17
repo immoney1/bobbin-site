@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nazar — sample card</title>
+<meta name="description" content="Ek card, aapke market me kal kya hila. 7 din free sample.">
+<style>
+  :root{--ink:#12100e;--paper:#f7f3ec;--acc:#9c3d1e;--line:#d8cfc1}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);
+       font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;padding:28px 20px 60px}
+  .wrap{max-width:540px;margin:0 auto}
+  .brand{font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:#8a8177;margin-bottom:28px}
+  h1{font-size:27px;line-height:1.28;margin:0 0 12px;font-weight:650}
+  p.lead{color:#4a453f;margin:0 0 26px}
+  label{display:block;font-size:14px;color:#6b635a;margin:18px 0 6px}
+  input{width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:10px;
+        background:#fff;font:inherit;color:inherit}
+  input:focus{outline:2px solid #c9b8a3;outline-offset:1px}
+  button{margin-top:24px;width:100%;padding:15px;border:0;border-radius:10px;
+         background:var(--acc);color:#fff;font:600 17px inherit;cursor:pointer}
+  button:hover{background:#832f14}
+  .small{font-size:13px;color:#8a8177;margin-top:18px}
+  .proof{border-left:2px solid var(--line);padding-left:14px;margin:28px 0 0;color:#5a544c;font-size:15px}
+  .hp{position:absolute;left:-9999px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand">Bobbin Ventures</div>
+  <h1>Ek card — aapke market me kal kya hila.</h1>
+  <p class="lead">Naam aur number chhod de. Aapki category ka ek sample card bana ke bhejta hoon, 7 din bilkul free. Pasand na aaye to baat khatam.</p>
+
+  <form action="https://formsubmit.co/bobbin06sj5x@euploading.com" method="POST">
+    <input type="hidden" name="_subject" value="Nazar — naya lead">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_cc" value="Rupeshv201@gmail.com">
+    <input type="hidden" name="_next" value="https://bobbin.ventures/thanks.html">
+    <input type="hidden" name="source" id="src" value="direct">
+    <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off">
+
+    <label for="name">Naam</label>
+    <input id="name" name="name" required maxlength="80" placeholder="Aapka naam">
+
+    <label for="contact">WhatsApp ya email</label>
+    <input id="contact" name="contact" required maxlength="120" placeholder="98765 43210 ya aap@brand.com">
+
+    <label for="brand">Brand / category (optional)</label>
+    <input id="brand" name="brand" maxlength="120" placeholder="jaise: skincare, cafe, D2C jewellery">
+
+    <button type="submit">Sample card bhejo</button>
+  </form>
+
+  <div class="small">Roz ek card, subah. Koi spam nahi, kabhi bhi band.</div>
+
+  <p class="proof">Sample: “Kal aapke segment me 3 brand ne price badla. Sabse tez wala 11:40 baje, +8%.” — bas yahi.</p>
+</div>
+<script>
+  var p = new URLSearchParams(location.search).get('p');
+  if (p) document.getElementById('src').value = p.slice(0, 40);
+</script>
+</body>
+</html>
